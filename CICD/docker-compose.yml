@@ -1,0 +1,11 @@
+version: '3.4'
+services:
+  CICD:
+    image: damtuandatdev96/datdt44:latest
+    container_name: datdt44cicd
+    hostname: datdt44cicd
+    restart: always
+    ports:
+      - "8080:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
